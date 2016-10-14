@@ -1,12 +1,11 @@
 console.log("loaded")
-var a = $("#factor-one")
-var b = $("#factor-two")
-var product = $("#product")
+var a = $("#thing-one")
+var product = $("#sum")
 var input = $(".input")
 var results = $("#list")
 var list = [""]
 
-function multiplication (arg1,arg2) {
+function multiplication (arg1) {
   console.log("called")
   var c = arg1*arg2
   product.html(c)
@@ -17,8 +16,7 @@ function multiplication (arg1,arg2) {
 input.keydown(function(e) {	
   if (e.keyCode == "13") {
     var aval = a.val()
-    var bval = b.val()
     console.log("enter")
-    multiplication(aval,bval)
+    multiplication(aval)
   }
 })
