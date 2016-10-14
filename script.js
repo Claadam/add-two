@@ -5,9 +5,9 @@ var input = $(".input")
 var results = $("#list")
 var list = [""]
 
-function multiplication (arg1) {
+function add2 (arg1) {
   console.log("called")
-  var c = arg1*arg2
+  var c = arg1.val()+2
   product.html(c)
   list.push(" " + c)
   results.html(list.toString())
@@ -17,6 +17,6 @@ input.keydown(function(e) {
   if (e.keyCode == "13") {
     var aval = a.val()
     console.log("enter")
-    multiplication(aval)
+    add2(aval)
   }
 })
