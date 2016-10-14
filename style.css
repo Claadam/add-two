@@ -1,0 +1,14 @@
+.input {
+  color: dodgerblue;
+  background-color: firebrick;
+}
+
+#product {
+  color: orchid;
+  text-shadow: 2px 2px #aaaaaa;
+  background-color: yellowgreen;
+}
+
+#list {
+  color: blueviolet;
+}
